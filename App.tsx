@@ -14,6 +14,8 @@ import {
   View,
 } from 'react-native';
 
+import LoginScreen from './src/screens/LoginScreen';
+
 
 function App(): React.JSX.Element {
 
@@ -22,10 +24,11 @@ function App(): React.JSX.Element {
       <View>
         <Text style={styles.text}>Mon Régime Alimentaire</Text>
       </View>
+      <LoginScreen />
      
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   root: {
