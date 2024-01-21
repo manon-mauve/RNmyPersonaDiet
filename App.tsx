@@ -16,6 +16,7 @@ import {
 
 import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/RegisterScreen';
+import ForgotPasswordScreen from './src/screens/ForgotPasswordScreen';
 
 
 function App(): React.JSX.Element {
@@ -25,7 +26,7 @@ function App(): React.JSX.Element {
       <View>
         <Text style={styles.text}>Mon Régime Alimentaire</Text>
       </View>
-      <RegisterScreen/>
+      <ForgotPasswordScreen/>
      
     </SafeAreaView>
   );
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
 
   text: {
     color: '#ffffff',
-    fontSize: 20,
+    fontSize: 25,
     fontWeight: "700",
   },
 
