@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
   text: {
     paddingHorizontal:8, 
     textAlign: 'center', 
-    color: '#585858', 
+    color: '#585858',
+    fontSize: 14, 
   },
 })
 

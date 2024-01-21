@@ -35,12 +35,12 @@ const styles = StyleSheet.create({
 
   container_GOOGLE: {
     backgroundColor: '#FAE9EA',
-    height: 35,
+    height: 40,
   },
 
   container_FACEBOOK: {
     backgroundColor: '#E7EAF4',
-    height: 35,
+    height: 40,
   },
 
   text: {
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   text_FORGETPASSWORD: {
     color: '#585858',
     textDecorationLine: 'underline',
-    fontSize: 12,
+    fontSize: 14,
   },
 
   text_GOOGLE: {
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   text_TERTIARY: {
     color: '#585858',
     textDecorationLine: 'underline',
-    fontSize: 12,
+    fontSize: 14,
   },
 });
 
