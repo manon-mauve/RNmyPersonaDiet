@@ -18,6 +18,7 @@ import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/RegisterScreen';
 import ForgotPasswordScreen from './src/screens/ForgotPasswordScreen';
 import HomePageScreen from './src/screens/HomePageScreen';
+import CreateNewDataScreen from './src/screens/CreateNewDataScreen';
 
 
 function App(): React.JSX.Element {
