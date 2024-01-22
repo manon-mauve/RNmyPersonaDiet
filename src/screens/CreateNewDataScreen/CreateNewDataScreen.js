@@ -1,13 +1,8 @@
-import {
-    FormControl,
-    FormLabel,
-    Input,
-    Button
-  } from "@chakra-ui/react";
+
   import React, { useState } from "react";
   import { useForm } from "react-hook-form";
   
-  const CreateNewDataScreen = ({ onAdd }) => {
+  /*const CreateNewDataScreen = ({ onAdd }) => {
     const form = useForm();
 
     const [input, setInput] = useState("");
@@ -21,30 +16,32 @@ import {
 
         <form onSubmit={form.handleSubmit(handleSubmitAdd)}>
         <FormControl>
-            <FormLabel>Enter First Name</FormLabel>
             <Input
-            {...form.register("firstName")}
-            placeholder="Example: AJX"
+            {...form.register("date")}
+            placeholder="Date"
             />
-            <FormLabel>Enter Last Name</FormLabel>
+     
             <Input
-            {...form.register("lastName")}
-            placeholder="Example: Ahmad"
+            {...form.register("time")}
+            placeholder="Heure"
             />
-            <FormLabel>Enter Email</FormLabel>
+   
             <Input
-            {...form.register("email")}
-            placeholder="Example: ajx@gmail.com"
+            {...form.register("food")}
+            placeholder="Aliment"
             />
-            <FormLabel>Enter Age</FormLabel>
-            <Input {...form.register("age")} placeholder="Example: 19" />
-            <FormLabel>Enter Address</FormLabel>
+
+            <Input 
+            {...form.register("quantity")} 
+            placeholder="Quantité" />
+
             <Input
-            {...form.register("address")}
-            placeholder="Example: Bhagalpur,Biahr"
+            {...form.register("weight")}
+            placeholder="Poids"
             />
+
             <Button mt={4} colorScheme="teal" type="submit">
-            Add
+            Ajouter
             </Button>
         </FormControl>
         </form>
@@ -54,4 +51,4 @@ import {
   }
 
   export default CreateNewDataScreen;
-  
+  */

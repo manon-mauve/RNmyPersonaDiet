@@ -10,11 +10,15 @@ import {
 
 import CustomButton from '../../components/CustomButton/CustomButton';
 
+import { useNavigation } from '@react-navigation/native';
+
 const HomePageScreen = () => {
   const { height } = useWindowDimensions();
 
+  const navigation = useNavigation();
+
   const onAddNewDataPressed = () => {
-    console.warn('Ajouter');
+    navigation.navigate('CreateNewData');
   };
 
   const onSeeAllDataPressed = () => {
@@ -22,7 +26,7 @@ const HomePageScreen = () => {
   };
 
   const onLoginPressed = () => {
-    console.warn('Retour page connexion');
+    navigation.navigate('Login');
   };
 
   return (
@@ -60,9 +64,9 @@ const HomePageScreen = () => {
 
 const styles = StyleSheet.create({
   root: {
-    marginVertical: 30,
+    marginBottom: 30,
     paddingVertical: 20,
-    width: '90%',
+    width: '100%',
     backgroundColor: '#C1F2B0',
     borderRadius: 15,
   },

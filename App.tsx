@@ -7,48 +7,44 @@
 
 import React from 'react';
 
-import {
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-import LoginScreen from './src/screens/LoginScreen';
-import RegisterScreen from './src/screens/RegisterScreen';
-import ForgotPasswordScreen from './src/screens/ForgotPasswordScreen';
-import HomePageScreen from './src/screens/HomePageScreen';
-import CreateNewDataScreen from './src/screens/CreateNewDataScreen';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
+import Navigation from './src/navigation';
 
 
-function App(): React.JSX.Element {
+const App = () => {
 
   return (
-    <SafeAreaView style={styles.root}>
-      <View>
+    <View style={styles.root}>
+      <View style={styles.container}>
         <Text style={styles.text}>Mon Régime Alimentaire</Text>
+        <Navigation />
       </View>
-      <HomePageScreen/>
-     
-    </SafeAreaView>
+             
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    alignItems: 'center',
     backgroundColor: '#65B741',
     paddingTop: 50,
-    fontFamily: 'Poppins',
+  },
+
+  container: {
+    flex: 1,    
   },
 
   text: {
+    textAlign: 'center',
     color: '#ffffff',
     fontSize: 25,
     fontWeight: "700",
-  },
-
+    marginBottom: 30,
+  }
 });
 
 export default App;

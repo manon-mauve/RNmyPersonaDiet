@@ -5,17 +5,21 @@ import CustomInput from '../../components/CustomInput/CustomInput';
 
 import CustomButton from '../../components/CustomButton/CustomButton';
 
+import { useNavigation } from '@react-navigation/native';
+
 const RegisterScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordRepeat, setPasswordRepeat] = useState('');
 
+  const navigation = useNavigation();
+
   const onRegisterPressed = () => {
-    console.warn('Créer un compte');
+    navigation.navigate('HomePage');
   };
 
   const onLoginPressed = () => {
-    console.warn('Se connecter');
+    navigation.navigate('Login');
   };
 
   return (
@@ -64,9 +68,9 @@ const RegisterScreen = () => {
 
 const styles = StyleSheet.create({
   root: {
-    marginVertical: 30,
+    marginBottom: 30,
     paddingVertical: 20,
-    width: '90%',
+    width: '100%',
     backgroundColor: '#C1F2B0',
     borderRadius: 15,
   },

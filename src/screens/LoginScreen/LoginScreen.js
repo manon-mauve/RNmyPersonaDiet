@@ -7,20 +7,24 @@ import CustomButton from '../../components/CustomButton/CustomButton';
 
 import DividerWithText from '../../components/DividerWithText/DividerWithText';
 
+import { useNavigation } from '@react-navigation/native';
+
 const LoginScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const navigation = useNavigation();
+
   const onLoginPressed = () => {
-    console.warn('Se connecter');
+    navigation.navigate('HomePage');
   };
 
   const onForgotPasswordPressed = () => {
-    console.warn('Mot de passe oublié ?');
+    navigation.navigate('ForgotPassword');
   };
 
   const onRegisterPressed = () => {
-    console.warn('Créer un compte');
+    navigation.navigate('Register');
   };
 
   const onLoginWithGooglePressed = () => {
@@ -88,15 +92,16 @@ const LoginScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  root: {
-    marginVertical: 30,
-    paddingVertical: 20,
-    width: '90%',
+  root: {      
+    width: '100%',
     backgroundColor: '#C1F2B0',
     borderRadius: 15,
+    marginBottom: 30,
+    paddingVertical: 20,
   },
 
   container: {
+    flex: 1,
     alignItems: 'center',
     width: '100%',
   },
