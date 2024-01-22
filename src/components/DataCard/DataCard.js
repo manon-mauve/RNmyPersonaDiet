@@ -1,4 +1,4 @@
-import { Text, StyleSheet, Pressable } from 'react-native';
+import { Text, StyleSheet, View } from 'react-native';
 
 const DataCard = ({ data }) => {
   return (
